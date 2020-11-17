@@ -21,7 +21,8 @@ let stauts  = {
     \`\`\`
     Set days: ${o.days + "d" || '< Not set >'}
     Logs Channel ID: ${db.get(`logs_${message.guild.id}`) || '< No Set >'}
-    Alts Kicking: ${stauts[db.get(`status_${message.guild.id}`)] || 'off'}\`\`\`
+    Alts Kicking: ${stauts[db.get(`status_${message.guild.id}`)] || 'off'}
+    Action: ${db.get(`action_${message.guild.id}`) || '< Not Set>'}\`\`\`
      `)
   .setFooter(message.guild.name , message.guild.iconURL())
   .setTimestamp()
