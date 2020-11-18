@@ -15,7 +15,7 @@ if(status === false) {
     message.channel.send(`Toggle anit alts kicking system`)
     return;
 }
-if(status === false) {
+if(status === true) {
     db.set(`status_${message.guild.id}`, false)
     message.channel.send(`disabled anit alts kicking system`)
     return;
